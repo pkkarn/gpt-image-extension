@@ -1,15 +1,27 @@
-1. `tsc *.ts` to compile all tyescript files
-2. `tsconfig.json` will be place where you will define pre-exisiting rules before tsc compiles code
-3. Adding `jsx: react` in compiler option is good if you are dealing with react component as it transforms
-it into `React.createElement` thing.
-4. `webpack` will take all the files and different modules and then will convert them into one single file and that browser can understand and load directly
-5. `copy-webpack-plugin` to copy static files in targeted folder
-6. `CleanWebpackPlugin` used to clean build before you initiate new one
-7. `cross-env` is used to toggle env
+# DallE Image Generator Extension
 
+**Description:** Idea behind making this `chrome extension` was to automate image generation process. If you've `ChatGPT Plus` account and you tried generating
+images through their service called `DALL-E` then you might have seen that you don't get exact thing you want in first cut... For that, you have to make few attempts or you have to enter prompt again and again so that you can pick `1` out of `10` generation...
 
+And waiting and entering prompt again and again is kind a tedious process and you might get irritated doing so.
 
+### How this Extension can help you?
 
-### Additional Note:
+So, it basically takes 3 paramerters or input as of now. where you defined things like:
 
-`Note`: Even though when you compile typescript to javascript using `.tsc` that will only convert it into javascript file, in order to compile this React imports and everything in plain javascript, you still need webpack compiler. In shorter, you might need `webpack` to bundle them all.
+- Initial Prompt to start with
+- Total no. of iteration it should do
+- Start process button to execute script
+
+### How to use this extension
+
+1. Click on extension and open popup and fill these value.
+
+![image](./src/screenshots/image_extension_popup.png)
+
+2. Click on `Start` button and refresh `page`.
+3. And then it will start generating image like this, first time it enters prompt given by you... And then use next, next after that...
+
+![image](./src/screenshots/example.png)
+
+4. Yah that's it, go and have fun now... or do other things as you please... You can checkout it later once your generations are ready 😃
